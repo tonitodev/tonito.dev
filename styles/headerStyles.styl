@@ -1,11 +1,45 @@
 @import "./mainStyles.styl"
 
 header
-    padding: 15px 50px
+	height: 60px
 
-    img
-        width: 200px
-        height: auto
-    nav
-        display: inline-block
-        align-self: right
+	display: grid
+	grid-template-columns: 3fr 2fr 1fr
+	
+	padding: 0 50px
+
+	background-color: $mediumBackground
+
+	img
+		width: 200px
+		height: auto
+
+		margin: auto 0
+
+	nav
+		padding auto 0
+		
+		ul
+			display: flex
+			justify-content: space-evenly
+
+			height: 60px
+
+			li
+				align-self: center
+				list-style: none
+	button
+		width: 150px
+		height: 40px
+
+		margin: auto auto
+
+		border-radius: 20px
+		border: 0px
+		background-color: $mainColor
+
+		a
+			text-decoration: none
+			color: $mainWhite
+
+			font-size: 1.8rem
