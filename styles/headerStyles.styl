@@ -1,4 +1,5 @@
 @import "./mainStyles.styl"
+@import "./buttonStyles.styl"
 
 header
 	height: 60px
@@ -16,9 +17,7 @@ header
 
 		margin: auto 0
 
-	nav
-		padding auto 0
-		
+	nav	
 		ul
 			display: flex
 			justify-content: space-evenly
@@ -28,18 +27,9 @@ header
 			li
 				align-self: center
 				list-style: none
-	button
-		width: 150px
-		height: 40px
+button
+	margin-top: 0
+	a
+		color: $mainWhite
 
-		margin: auto auto
-
-		border-radius: 20px
-		border: 0px
-		background-color: $mainColor
-
-		a
-			text-decoration: none
-			color: $mainWhite
-
-			font-size: 1.8rem
+		font-size: 1.8rem

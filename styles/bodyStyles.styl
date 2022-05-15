@@ -1,0 +1,67 @@
+@import "./mainStyles.styl"
+@import "./buttonStyles.styl"
+
+buttonAlignment()
+	display: block
+	text-align: center
+
+.introduce
+		margin: 30px 7%
+
+	.personalPhoto
+		display: block
+
+		margin: 30px auto
+
+		width: 90%
+		min-width: 200px
+		height: auto
+		min-height: 200px
+
+		text-align: center
+		
+		source, img
+			width: 80%
+
+	button
+		buttonAlignment()
+		margin-top: 50px
+
+	.--socialNetworksContainer
+		display: flex
+		margin-top: 50px
+
+		justify-content: space-evenly
+		gap: 30px
+
+		.socialNetworkItem
+			img
+				height: 23px
+				width: auto
+.personalProjects
+	padding: 50px 7%
+	background-color: $mediumBackground
+	.projectsIntroduce
+		h1
+			margin-bottom: 30px
+		.--mainParagraph
+			display: block
+			height: auto
+			min-height: 50px
+		button
+			buttonAlignment()
+			margin: 0, auto, 50, auto
+			margin-top: 50px
+
+.mainFooter
+	padding: 50px 10%
+	background-color: $darkBackground
+	.mailtonitoDevCTA
+		text-align: center
+		h3
+			a
+				text-decoration: none
+				color: $textColor_light
+				font-family: $font1
+		
+
