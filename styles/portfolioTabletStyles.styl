@@ -1,0 +1,41 @@
+@import "./mainStyles.styl"
+
+@media (min-width: 720px)
+
+	.introduce
+		display: flex
+		flex-direction: row-reverse
+
+		.personalPhoto
+			width: 55%
+
+		.introduceText
+			.__sectionButton
+				display: inline-block
+			.--socialNetworksContainer
+				justify-content: space-between
+
+	.personalProjects
+		display: grid
+		grid-template-columns: 2fr 3fr
+
+		.projectsIntroduce
+			margin-right: 30px
+			.__sectionButton
+				display: inline-block
+
+		.projectsBanner
+			display: flex
+			background-color: $mainAlternativeColor	
+			justify-content: center
+			align-items: center
+			
+			h1
+				text-align: center
+
+@media (min-width: 1000px)
+	.personalProjects
+		height: auto
+		min-height: 520px
+		.projectsIntroduce
+			margin-top: 30%

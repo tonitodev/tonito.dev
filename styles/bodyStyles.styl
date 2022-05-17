@@ -1,9 +1,13 @@
 @import "./mainStyles.styl"
 @import "./buttonStyles.styl"
+@import "./headerStyles.styl"
 
-buttonAlignment()
+buttonStyles()
 	display: block
 	text-align: center
+	a
+		color: $mainWhite
+		font-size: 1.8rem
 
 .introduce
 		margin: 30px 7%
@@ -23,8 +27,9 @@ buttonAlignment()
 		source, img
 			width: 80%
 
-	button
-		buttonAlignment()
+
+	.__sectionButton
+		buttonStyles()
 		margin-top: 50px
 
 	.--socialNetworksContainer
@@ -49,9 +54,11 @@ buttonAlignment()
 			height: auto
 			min-height: 50px
 		button
-			buttonAlignment()
+			buttonStyles()
 			margin: 0, auto, 50, auto
 			margin-top: 50px
+	.projectsBanner
+		display: none
 
 .mainFooter
 	padding: 50px 10%
@@ -63,5 +70,8 @@ buttonAlignment()
 				text-decoration: none
 				color: $textColor_light
 				font-family: $font1
+
+
+
 		
 
