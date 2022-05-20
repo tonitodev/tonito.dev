@@ -2,12 +2,10 @@
 @import "./buttonStyles.styl"
 @import "./headerStyles.styl"
 
-buttonStyles()
-	display: block
-	text-align: center
-	a
-		color: $mainWhite
-		font-size: 1.8rem
+
+.__sectionButton
+	buttonStyles()
+	margin-top: 50px
 
 .introduce
 		margin: 30px 7%
@@ -27,10 +25,9 @@ buttonStyles()
 		source, img
 			width: 80%
 
+	.introduceText
+		margin: auto 0
 
-	.__sectionButton
-		buttonStyles()
-		margin-top: 50px
 
 	.--socialNetworksContainer
 		display: flex

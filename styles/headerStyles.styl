@@ -2,9 +2,10 @@
 @import "./buttonStyles.styl"
 
 header
+	width: 100%
 	height: 60px
 
-	display: grid
+	display: none
 	grid-template-columns: 2fr 2fr 1fr
 	
 	padding: 0 50px
@@ -17,7 +18,7 @@ header
 
 		margin: auto 0
 
-	nav	
+	nav
 		ul
 			display: flex
 			justify-content: space-evenly
@@ -27,7 +28,20 @@ header
 			li
 				align-self: center
 				list-style: none
-	button
-		a
-			color: $mainWhite
-			font-size: 1.8rem
+
+				a
+					display: inline-block
+					height: 60px
+					line-height: 60px
+
+					text-decoration: none
+					color: $textColor
+					font-size: 1.8rem
+			
+				a:hover
+					color: $secondaryOne
+					border-bottom: 3px solid $secondaryOne
+
+	button:hover
+		box-shadow: 0px 2px 7px 2px rgba(0, 0, 0, 0.2);
+		color: $secondaryThree
