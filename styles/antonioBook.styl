@@ -1,0 +1,40 @@
+@import "./mainStyles.styl"
+
+.bookIntroduction
+	padding: 7%
+
+.projectCards
+	display: grid
+	grid-template-columns: 1fr
+	gap: 50px
+
+	padding: 0 7%
+	margin-bottom: 100px
+
+	.--project
+		width: 100%
+		height: auto
+		min-height: 550px
+
+		background-color: $mediumBackground
+		.--projectDescription
+			height: 400px
+			padding: 10%
+			h1
+				margin-bottom: 30px
+		img
+			display: block
+			width: 100%
+			height: 250px
+			object-fit: cover
+			object-position: center
+
+@media (min-width: 720px)
+	.bookIntroduction
+		padding: 100px 7% 50px 7%
+
+
+@media (min-width: 1000px)
+	.projectCards
+		grid-template-columns: 1fr 1fr
+			

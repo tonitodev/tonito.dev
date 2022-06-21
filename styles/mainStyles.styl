@@ -62,14 +62,14 @@ h3
 /* Paragraph's styles */
 
 p
-	line-height: 175%
+	line-height: 120%
 	letter-spacing: 0.03em
 	color: $textColor
 	margin-top: 12px
 
-.--mainParagraph
+.--mainParagraph, .--mainParagraph > p, .bookIntroduction > p
 	font-size: 1.8 rem
-	line-height: 175%
+	line-height: 120%
 
 .--secondaryParagraph
 	font-size: 1.4rem
@@ -87,12 +87,17 @@ button, a
 ul, ol, li
 	font-size: 1.8rem
 	color: $textColor
+	list-style none
+
+li
+	line-height: 150%
 
 
 a
 	line-height: 150%
-	text-decoration: none
 	letter-spacing: 0.04em
+	text-decoration: underline
+	color: $secondaryTwo
 
 .__verticalSpace
 	margin-top: 30px
